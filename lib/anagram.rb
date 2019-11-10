@@ -5,9 +5,9 @@ class Anagram
     @words = words
   end
   
-  def match
+  def match(words)
     split_words = []
-    @words.each do |word|
+    words.each do |word|
       split_words << word.split
     end
   end
