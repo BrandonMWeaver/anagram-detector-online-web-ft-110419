@@ -1,8 +1,8 @@
 class Anagram
-  attr_accessor :words
+  attr_accessor :word
   
-  def initialize(words)
-    @words = words
+  def initialize(word)
+    @word = word
   end
   
   def match(words)
@@ -11,7 +11,8 @@ class Anagram
       split_words << word.split('')
     end
     split_words.each do |word|
-      word.sort
+      word = word.sort
     end
+    split_words.each
   end
 end
